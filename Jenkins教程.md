@@ -9,3 +9,7 @@
 切记使用国内插件json文件。直接使用清华源更新插件，本质还是使用国外源。下载速度很慢。
 
 2、建议先将jenkins汉化
+
+GitLab
+
+https://www.cnblogs.com/bycnboy/p/10594198.html
