@@ -32,3 +32,35 @@ GitLab安装步骤
     chkconfig postfix on
     lokkit -s http -s ssh
 
+2、安装GitLab
+直接配置清华源，yum安装就行了，版本自己制定，建议10.0以上版本
+
+    sudo yum install gitlab-ce
+
+2、基础配置
+
+配置external_url
+
+    vi /etc/gitlab/gitlab.rb
+    external_url '你的IP'
+
+修改服务端口
+
+    vi /etc/gitlab/gitlab.rb
+    unicorn['port']=你想的端口号
+
+修改之后切记重新配置
+
+    sudo gitlab-ctl reconfigure
+
+状态、停止、启动、重启
+
+    sudo gitlab-ctl status
+    sudo gitlab-ctl stop
+    sudo gitlab-ctl start
+    sudo gitlab-ctl restart
+
+查看日志
+
+    sudo gitlab-ctl tail
+    
