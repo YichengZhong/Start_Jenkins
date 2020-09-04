@@ -13,3 +13,22 @@
 GitLab
 
 https://www.cnblogs.com/bycnboy/p/10594198.html
+
+GitLab安装步骤
+1、基础文件
+
+    yum install -y curl 
+    yum install -y policycoreutils-python
+    yum install -y openssh-server
+    yum install -y openssh-clients
+    yum install -y postfix
+    yum install -y cronie
+    yum install -y lokkit
+    
+    systemctl enable sshd
+    systemctl start
+    systemctl enable postfix
+    systemctl start postfix
+    chkconfig postfix on
+    lokkit -s http -s ssh
+
