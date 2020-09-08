@@ -15,6 +15,7 @@ GitLab
 https://www.cnblogs.com/bycnboy/p/10594198.html
 
 GitLab安装步骤
+
 1、基础文件
 
     yum install -y curl 
@@ -64,3 +65,5 @@ GitLab安装步骤
 
     sudo gitlab-ctl tail
     
+
+Gerrit安装
