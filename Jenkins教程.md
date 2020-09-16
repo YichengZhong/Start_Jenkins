@@ -68,3 +68,5 @@ GitLab安装步骤
     
 
 Gerrit安装
+
+建议用war包安装，和Jenkins一样的。
