@@ -75,6 +75,6 @@ Gerrit安装
 
 Gerrit的插件配置后续单独整理
 
-sudo rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
-sudo yum install -y nginx
+    sudo rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+    sudo yum install -y nginx
 
