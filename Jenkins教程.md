@@ -77,4 +77,48 @@ Gerrit的插件配置后续单独整理
 
     sudo rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
     sudo yum install -y nginx
+    cat default.conf_bak 
+    cp -r default.conf_bak gerrit.conf
+    vi gerrit.conf 
+    rm -rf gerrit.conf 
+    vi gerrit.conf
+    sudo chmod 755 /home/gerrit 
+    htpasswd
+    yum -y install httpd-tools
+    htpasswd -c /home/gerrit/gerrit.password admin 
+    htpasswd -m /home/gerrit/gerrit.password zycgerrit
+    sudo service nginx restart 
+    vi gerrit.conf 
+    systemctl status nginx.service
+    cd /etc/nginx/
+    ls
+    cat nginx.conf 
+    systemctl status nginx.service
+    getenforce　　　　
+    setenforce 0 
+    systemctl status nginx.service
+    sudo service nginx restart 
+    cd /home/gerrit/
+    ls
+    cd gerrit_site/
+    ls
+    cd bin/
+    ls
+    ./gerrit.sh restart 
+    ifconfig
+    cd /etc/nginx/
+    cd conf.d/
+    ls
+    vi gerrit.conf 
+    sudo service nginx restart 
+    cd /home/gerrit/gerrit_site/bin/
+    ./gerrit.sh restart 
+    cd /etc/apache2
+    cd /etc/apache
+    cd /etc
+    cd /home/gerrit/gerrit_site/etc
+    ls
+    vi gerrit.config 
+    history
+
 
