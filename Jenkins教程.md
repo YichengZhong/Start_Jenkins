@@ -65,7 +65,6 @@ GitLab安装步骤
 查看日志
 
     sudo gitlab-ctl tail
-    
 
 Gerrit安装
 
@@ -120,5 +119,3 @@ Gerrit的插件配置后续单独整理
     ls
     vi gerrit.config 
     history
-
-
